@@ -1,3 +1,4 @@
+import { BookOpen, FilePen } from "lucide-react";
 import Link from "next/link";
 
 function Header() {
@@ -13,6 +14,22 @@ function Header() {
                     </div>
                 </div>
             </Link>
+
+            {/* nav icons */}
+            <div className="absolute -top-5 right-5 flex space-x-2" >
+            <Link href='/' >
+                <FilePen
+                    className="w-8 lg:w-10 lg:h-10 mx-auto text-purple-500 mt-10 border border-purple-500 p-2 rounded-md hover:opacity-50 cursor-pointer" 
+                />
+            </Link>
+            <Link href='/stories' >
+            <BookOpen 
+                    className="w-8 lg:w-10 lg:h-10 mx-auto text-purple-500 mt-10 border border-purple-500 p-2 rounded-md hover:opacity-50 cursor-pointer" 
+            />
+            </Link>
+            </div>
+
+
         </header>
     );
 }
