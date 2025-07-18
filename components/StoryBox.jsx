@@ -1,5 +1,6 @@
 "use client"
 
+import { Button } from "./ui/button";
 import { Select, SelectItem, SelectTrigger, SelectValue, SelectContent } from "./ui/select";
 import { Textarea } from "./ui/textarea";
 
@@ -22,7 +23,9 @@ function StoryBox() {
            ))}
           </SelectContent>
         </Select>
+        <Button className="w-full" size="lg"  >Generate Story</Button>
       </section>
+
       <section className="flex-1 pb-5 mt-5" > </section>
     </div>
   );
